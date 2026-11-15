@@ -1,0 +1,21 @@
+* text=auto
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+*.php text eol=lf
+*.json text eol=lf
+*.example text eol=lf
+
+# Exclude developer helper runner scripts from GitHub language stats
+*.ps1 linguist-vendored
+*.bat linguist-vendored
+bootstrap.ps1 linguist-vendored
+start.ps1 linguist-vendored
+create-super-admin.ps1 linguist-vendored
+Start-App.bat linguist-vendored
+Create-Super-Admin.bat linguist-vendored
+
+Start-Public-Tunnel.bat export-ignore
+start-public-tunnel.ps1 export-ignore

@@ -1,0 +1,42 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+!.env.testing.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+!backend/.env.testing.example
+!backend/.env.production.example
+
+# Dependencies and build output
+backend/vendor/
+node_modules/
+backend/node_modules/
+public/build/
+backend/public/build/
+
+# Laravel runtime files
+backend/storage/logs/*.log
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+# Database dumps. A dump contains account and credential data and must never
+# be committed; keep backups outside the repository.
+backend/storage/app/backups/
+backend/bootstrap/cache/*.php
+backend/database/*.sqlite
+backend/database/*.sqlite-journal
+
+# Local tooling and test artifacts
+.tools/
+artifacts/
+playwright-report/
+test-results/
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
